@@ -1,15 +1,34 @@
 html, body {
   font-family: $mainFont;
+  font-weight: 300;
   color: $mainTextColor;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Comfortaa', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   &:link {
+<<<<<<< HEAD
 
+=======
+    color: $linkColor;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $linkColor;
+  }
+  &:hover, &:active {
+    text-decoration: none;
+>>>>>>> Adding improvements to variables and base
   }
   &:visited {
 
@@ -19,10 +38,13 @@ a {
   }
 }
 
+<<<<<<< HEAD
 p {
   margin: 0;
 }
 
+=======
+>>>>>>> Adding improvements to variables and base
 .text-left {
   text-align: left;
 }

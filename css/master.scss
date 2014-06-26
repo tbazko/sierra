@@ -3,17 +3,20 @@
 @import 'settings/mixins';
 
 // VENDOR
-@import 'vendor/normalize';
+@import 'vendor/bootstrap/stylesheets/bootstrap';
 
 // BASE
 @import 'base';
 
 // LAYOUT
+@import 'layout/header';
 @import 'layout/layout';
 
 // MODULES
 @import 'modules/lists';
 @import 'modules/buttons';
+@import 'modules/main-menu';
+@import 'modules/price-table';
 
 // Keep last one to be able to override elements margin and padding
 @import 'modules/margpad';

@@ -1,0 +1,23 @@
+.main-menu {
+  height: 85px;
+  line-height: 85px;
+  margin: 0;
+  li {
+    padding: 0;
+  }
+  a {
+    &:link, &:visited {
+      font-size: 18px;
+      font-weight: 200;
+      color: $mainTextColor;
+      text-decoration: none;
+      border: 2px solid transparent;
+      padding: 4px 10px 5px;
+      margin: 0;
+      @include border-radius(3px);
+    }
+    &:hover {
+      border: 2px solid $brand-info;
+    }
+  }
+}
