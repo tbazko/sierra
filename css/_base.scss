@@ -10,9 +10,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
+  font-size: 26px;
+  padding-bottom: 35px;
   font-family: 'Comfortaa', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  .service & {
+    background: url('../img/icons/icon-service.png') no-repeat;
+    padding: 90px 0 15px 101px;
+    margin: 15px 0 0 -101px;
+  }
+  .advantage & {
+    background: url('../img/icons/icon-advantage.png') no-repeat;
+    padding: 90px 0 15px 103px;
+    margin: 15px 0 0 -103px;
+  }
+  .review & {
+    background: url('../img/icons/icon-quote.png') no-repeat;
+    padding: 84px 0 30px 99px;
+    margin: -44px 0 0 -99px;
+  }
+  .blog & {
+    background: url('../img/icons/icon-blog.png') no-repeat;
+    padding: 88px 0 30px 101px;
+    margin: -44px 0 0 -101px;
+  }
+  .clients & {
+    background: url('../img/icons/icon-clients.png') no-repeat;
+    padding: 88px 0 0 101px;
+    margin: -70px 0 0 -101px;
+  }
+}
+
+h3 {
+  font-family: $mainFont;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+h4 {
+  color: #60aadb;
+  margin-bottom: 3px;
+}
+
+h5 {
+  font-size: 16px;
+  margin-bottom: 6px;
 }
 
 a {
@@ -41,6 +84,8 @@ a {
 <<<<<<< HEAD
 p {
   margin: 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 =======
@@ -72,4 +117,11 @@ p {
 .middle {
   @extend %inline-block;
   vertical-align: middle;
+}
+
+.justifier {
+  @extend %inline-block;
+  width: 100%;
+  line-height: 0;
+  visibility: hidden;
 }

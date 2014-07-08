@@ -15,9 +15,11 @@
       padding: 4px 10px 5px;
       margin: 0;
       @include border-radius(3px);
+      @include transitions();
     }
     &:hover {
       border: 2px solid $brand-info;
+      @include transitions();
     }
   }
 }

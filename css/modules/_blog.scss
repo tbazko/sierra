@@ -1,0 +1,86 @@
+.blog {
+  background: #2c3e50;  h2 {
+    color: #fff;
+  }
+}
+
+.blog-deco-container {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.blog-deco {
+  position: absolute;
+  bottom: 0;
+  right: -90px;
+  background: url('../img/blog-deco.png') no-repeat bottom right;
+  height: 100%;
+  width: 100%;
+}
+
+.blog-post {
+  height: 255px;
+  margin-bottom: 20px;
+  p {
+    width: 100%;
+  }
+}
+
+.blog-post-text {
+  position: relative;
+  height: 255px;
+  background: #fff;
+  padding: 10px 18px 15px;
+  @include border-radius(4px);
+  &.on-right {
+    @include border-radius(0 4px 4px 0);
+  }
+  &.on-left {
+    @include border-radius(4px 0 0 4px);
+  }
+}
+
+.blog-post-img {
+  &.on-left {
+    padding-right: 0;
+    .rounded-img {
+      overflow: hidden;
+      margin-right: -10px;
+      @include border-radius(4px 0 0 4px);
+    }
+  }
+  &.on-right {
+    padding: 0;
+    margin-left: -10px;
+    .rounded-img {
+      overflow: hidden;
+      @include border-radius(0 4px 4px 0);
+    }
+  }
+}
+
+.blog-buttons {
+  position: absolute;
+  right: 18px;
+  left: 18px;
+  bottom: 16px;
+}
+
+a.blog-btn {
+  @extend %inline-block;
+  font-size: 16px;
+  padding: 5px;
+  color: $mainTextColor;
+  border: 2px solid darken($brand-grey, 10%);
+  @include border-radius(4px);
+  @include transitions();
+  &:hover, &:active {
+    border-color: $brand-info;
+    @include transitions();
+  }
+}
+
+a.all-posts {
+  font-size: 18px;
+  color: #fff;
+}

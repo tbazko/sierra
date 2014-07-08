@@ -5,3 +5,157 @@
     color: #fff;
   }
 }
+
+.promo-list {
+  padding: 60px 0 50px 24px;
+  li.bordered {
+    border-left: 2px dotted #fff;
+    padding-bottom: 75px;
+    margin-bottom: 2px;
+  }
+  div {
+    margin-left: 40px;
+    position: relative;
+    height: 50px;
+    h2, p {
+      position: absolute;
+    }
+    h2 {
+      top: -10px;
+    }
+    p {
+      top: 20px;
+    }
+  }
+  li:first-child div {
+    h2 {
+      top: 0;
+    }
+    p {
+      top: 30px;
+    }
+  }
+}
+
+.promo-list-icon {
+  @extend %inline-block;
+  border: 2px solid #fff;
+  background: #2c3e50;
+  padding: 12px;
+  margin-left: -24px;
+  float: left;
+  @include border-radius(50%);
+}
+
+.btn.promo-btn {
+  margin-left: 64px;
+}
+
+.service {
+  padding: 0 0 65px;
+}
+
+.advantage {
+  position: relative;
+  background: #f3f5f6;
+  .rely, .quality, .price, .speed {
+    padding: 85px 15px 65px;
+    z-index: 1;
+  }
+  .rely {
+    background: #edf0f1;
+  }
+  .quality {
+    background: #e8ebed;
+  }
+  .price {
+    background: #e2e7e8;
+  }
+  .speed {
+    background: #dce2e4;
+  }
+}
+
+.advantage-part {
+  background: #d6dddf;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.advantage-title {
+  position: absolute;
+  top: -57px;
+  z-index: 2;
+}
+
+.advantage-img {
+  margin: 0 auto;
+  height: 141px;
+  line-height: 141px;
+}
+
+.clients {
+  text-align: justify;
+  padding: 30px 15px 0;
+}
+
+.review {
+  padding-bottom: 70px;
+  .rounded-img {
+    margin-right: 15px;
+    border: 2px solid $brand-primary;
+    overflow: hidden;
+    @include border-radius(4px);
+  }
+}
+
+footer {
+  background: #111 url('../img/pattern-grey.png') repeat;
+  height: 251px;
+  color: #fff;
+  padding: 40px 0;
+  a {
+    &:link, &:visited {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    &:hover, &:active {
+      color: #60aadb;
+    }
+  }
+  li:first-child a {
+    padding-left: 0;
+  }
+  .col-md-3 {
+    width: 28%;
+    &+.col-md-3 {
+      width: 22%;
+    }
+  }
+  .social {
+    padding: 35px 0 5px;
+    a {
+      font-size: 30px;
+      &:link, &:visited {
+        color: #60aadb;
+        padding: 0;
+      }
+      &:hover, &:active {
+        color: #fff;
+      }
+      i:before {
+        margin-left: 0;
+      }
+      .icon-vkontakte {
+        @extend %inline-block;
+        font-size: 27px;
+        margin-bottom: 2px;
+        vertical-align: bottom;
+      }
+    }
+  }
+}

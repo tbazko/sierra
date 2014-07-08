@@ -4,6 +4,7 @@
 
 // VENDOR
 @import 'vendor/bootstrap/stylesheets/bootstrap';
+@import 'vendor/fontello';
 
 // BASE
 @import 'base';
@@ -17,6 +18,7 @@
 @import 'modules/buttons';
 @import 'modules/main-menu';
 @import 'modules/price-table';
+@import 'modules/blog';
 
 // Keep last one to be able to override elements margin and padding
 @import 'modules/margpad';
